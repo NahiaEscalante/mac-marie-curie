@@ -64,6 +64,15 @@ h2 { font-family: var(--type); font-weight: 400; font-size: .8rem; color: var(--
 .art-dialog img { max-height: 96dvh; width: auto; }
 .art-dialog button { position: fixed; top: 1rem; right: 1.2rem; background: none; border: 0; color: var(--ink); font-family: var(--type); font-size: .85rem; cursor: pointer; padding: .4rem; }
 
+/* Cursor de luz */
+.has-glow, .has-glow * { cursor: none !important; }
+.glow { position: fixed; left: 0; top: 0; z-index: 50; pointer-events: none; opacity: 0; transition: opacity .4s; }
+.glow.on { opacity: 1; }
+.glow span { position: absolute; left: -.55rem; top: -.55rem; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: radial-gradient(circle, #effffb 0 20%, rgb(120 240 218 / .9) 38%, rgb(80 220 196 / .35) 70%, rgb(80 220 196 / .12) 100%); box-shadow: 0 0 1.2rem .3rem rgb(90 228 204 / .3), 0 0 4rem 1.5rem rgb(90 228 204 / .08); mix-blend-mode: screen; transition: transform .35s ease, box-shadow .5s ease; }
+.glow.over span { transform: scale(1.7); }
+.glow.lit span { box-shadow: 0 0 1.6rem .5rem rgb(90 228 204 / .45), 0 0 7rem 3rem rgb(90 228 204 / .14); }
+html:not(.has-glow) .glow { display: none; }
+
 @media (max-width: 860px) {
   body { font-size: 1.15rem; }
   .layout { grid-template-columns: 1fr; padding-inline: 1.25rem; max-width: 38rem; }
