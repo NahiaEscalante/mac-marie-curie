@@ -56,7 +56,6 @@ h2 { font-family: var(--type); font-weight: 400; font-size: .8rem; color: var(--
 .notes ol { padding-left: 1.2rem; font-size: .92rem; line-height: 1.5; color: var(--muted); display: grid; gap: .45rem; }
 .notes li::marker { font-family: var(--type); font-size: .8rem; }
 .notes li:target { color: var(--ink); }
-.notes p { margin-top: 1.4rem; font-size: .92rem; line-height: 1.5; color: var(--muted); font-style: italic; }
 
 .foot { margin-top: 3.5rem; font-family: var(--type); font-size: .75rem; color: var(--muted); }
 
