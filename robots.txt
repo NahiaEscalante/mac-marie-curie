@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nahiaescalante.github.io/mac-marie-curie/sitemap.xml

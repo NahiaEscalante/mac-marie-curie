@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+__pycache__/
+
+# Imagen de la obra, pendiente de publicar
+assets/images/curie*.webp
