@@ -29,6 +29,11 @@ h1, h2, p, dl, dd, ol { margin: 0; }
 
 .text { padding-block: 3rem; }
 
+/* Si la imagen de la obra no carga, solo se muestra el texto */
+.art img { color: transparent; }
+.no-art .art { display: none; }
+.no-art .layout { grid-template-columns: minmax(0, 36rem); justify-content: center; }
+
 .label { margin-bottom: 3rem; }
 .tile { display: inline-grid; grid-template-columns: auto; width: 4.6rem; padding: .4rem .5rem .45rem; border: 1px solid var(--gold); color: var(--gold); font-family: var(--type); line-height: 1.1; margin-bottom: 1.6rem; }
 .tile .z { font-size: .7rem; }
